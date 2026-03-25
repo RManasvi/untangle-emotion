@@ -23,3 +23,5 @@ Pillow==10.0.1
 fastapi
 uvicorn[standard]
 mediapipe
+flask
+flask-cors
