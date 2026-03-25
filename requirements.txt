@@ -25,3 +25,4 @@ uvicorn[standard]
 mediapipe
 flask
 flask-cors
+gunicorn
