@@ -205,6 +205,7 @@ def init_models():
     models_ready = True
     print("[stress_server] Models initialized successfully.")
 
+init_models()
 
 if __name__ == "__main__":
     init_models()
