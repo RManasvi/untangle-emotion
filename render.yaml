@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: untangle-emotion
+    runtime: python
+    buildCommand: apt-get install -y libgles2-mesa libgl1-mesa-glx && pip install -r requirements.txt
+    startCommand: gunicorn stress_server:app --bind 0.0.0.0:$PORT --workers 1 --timeout 300 --preload
+    envVars:
+      - key: MEDIAPIPE_DISABLE_GPU
+        value: "1"
